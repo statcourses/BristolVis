@@ -7,7 +7,7 @@ output: github_document
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>", fig.path = "README-")
 ```
 
-## Introduction to data visualisation and web applications using R: Osama Mahmoud
+## Introduction to data visualisation using R: Osama Mahmoud
 
 [![Build Status](https://travis-ci.org/Osmahmoud/essexBigdata.svg?branch=master)](https://travis-ci.org/Osmahmoud/essexBigdata)
 
