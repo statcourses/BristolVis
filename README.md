@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-Introduction to data visualisation and web applications using R: Osama Mahmoud
-------------------------------------------------------------------------------
+Introduction to data visualisation using R: Osama Mahmoud
+---------------------------------------------------------
 
 [![Build Status](https://travis-ci.org/Osmahmoud/essexBigdata.svg?branch=master)](https://travis-ci.org/Osmahmoud/essexBigdata)
 
