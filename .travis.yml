@@ -8,7 +8,6 @@ before_install:
 - tlmgr install fancyvrb units
 r_packages:
 - drat
-- knitr
 after_success:
 - wget https://raw.githubusercontent.com/statcourses/drat/master/deploy.sh
 - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash
