@@ -8,3 +8,7 @@ data("med")
 head(med)
 ?med
 vignette("practical1", package = "BristolVis")
+
+install.packages("drat")
+drat::addRepo("statcourses")
+install.packages("BristolVis")

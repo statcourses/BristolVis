@@ -3,7 +3,7 @@
 Introduction to data visualisation using R: Osama Mahmoud
 ---------------------------------------------------------
 
-[![Build Status](https://travis-ci.org/Osmahmoud/essexBigdata.svg?branch=master)](https://travis-ci.org/Osmahmoud/essexBigdata)
+[![Build Status](https://travis-ci.org/statcourses/BristolVis.svg?branch=master)](https://travis-ci.org/statcourses/BristolVis)
 
 This page provides notes, practicals and materials of the [data visualisation course](http://www.bristol.ac.uk/medical-school/study/short-courses/Introduction-to-Data-Visualisation-and-Web-Applications-Using-R/) at the University of Bristol, January 2019.
 
