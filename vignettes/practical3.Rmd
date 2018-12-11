@@ -1,27 +1,63 @@
-## ------------------------------------------------------------------------
-library("ggplot2")
+---
+title: "Practical 3 - Advanced graphics"
+author: "Osama Mahmoud"
+output: rmarkdown::html_vignette
+---
+<!--
+%\VignetteEngine{knitr::rmarkdown}
+%\VignetteIndexEntry{Practical 1}
+-->
 
-## ------------------------------------------------------------------------
+## Getting started
+
+To get you familiar with the underlying `ggplot2` concepts, we'll recreate
+some standard graphics. Some of these plots aren't particularly useful, we are
+just using them for illustration purposes.
+
+To begin with, load the `ggplot2` 
+
+```{r}
+library("ggplot2")
+```
+
+Next we load the `movies` data set
+
+```{r}
 # Details of the movies dataset can be displayed by:
 library(ggplot2movies)
 data(movies, package="ggplot2movies")
 ?movies
+```
 
-## ----results='hide'------------------------------------------------------
+When loading in data, it's a good idea to check some basic characteristics:
+
+```{r results='hide'}
 str(movies)
 dim(movies)
 names(movies)
 head(movies)
+```
 
-## ----cache=TRUE----------------------------------------------------------
+## Plot some information
+
+Feel free to experiment with your own ideas. I present some graphs as a reference that you may try to reproduce if you wish.
+
+### 1. What is the number of movies produced per year?
+
+```{r cache=TRUE, echo=FALSE, eval=FALSE}
 g = ggplot(data=movies, aes(x=year))
 g1 = g + geom_histogram(binwidth = 1, fill="#2b8cbe", alpha=0.6) +
   xlab("Year") + ylab("Number of movies produced") + theme_bw()
+```
 
-## ------------------------------------------------------------------------
+
+```{r echo=FALSE, eval=FALSE}
 g1
+```
 
-## ---- echo=TRUE, warning=FALSE-------------------------------------------
+###  2. What is the number of movies produced per year per genre (action, animation ect)?
+
+```{r, echo=TRUE, warning=FALSE}
 # TIP: You need first to create a genre variable:
 genre <- rep(0,nrow(movies))
 for(i in 18:24)
@@ -29,8 +65,9 @@ for(i in 18:24)
   genre[movies[,i]==1] <- names(movies)[i]
 }; genre[genre==0] <- "Unknown"
 movies$Genre <- genre
+```
 
-## ---- echo=FALSE, warning=FALSE, message=FALSE---------------------------
+```{r, echo=FALSE, warning=FALSE, message=FALSE, eval=FALSE}
 clr <- c('#8dd3c7','#ffffb3','#bebada','#fb8072','#80b1d3','#fdb462','#b3de69', '#000000')
 
 ggplot(movies, aes(x=year, fill=Genre)) + geom_histogram(binwidth=1) + scale_fill_manual(values = clr) +
@@ -47,26 +84,38 @@ ggplot(movies, aes(x=year, fill=Genre)) + geom_histogram(binwidth=1) + scale_fil
     axis.line         = element_blank(),
     panel.grid = element_blank()
   )
+```
 
-## ---- echo=FALSE---------------------------------------------------------
+### 3. Create a graph to present information on the rating of movies.
+
+```{r, echo=FALSE, eval=FALSE}
 ggplot(movies, aes(x=rating)) + geom_density(fill="#2b8cbe", alpha=0.6) + 
   ylab("Density of Movie Rating") + xlab("Score (out of 10)")
+```
 
-## ---- echo=FALSE---------------------------------------------------------
+### 4. Is there a difference on rating depending on genre?
+```{r, echo=FALSE, eval=FALSE}
 ggplot(movies, aes(x=factor(Genre), y=rating)) + xlab("") + ylab("Rating (out of 10") +
   geom_violin(fill="red", alpha=0.4) +
   stat_summary(fun.y = median, geom='point') +
   theme_bw() +
   theme(axis.text=element_text(face='bold', size = 12, angle = 45, hjust = 1))
+```
 
-## ---- echo=FALSE,message=FALSE,warning=FALSE-----------------------------
+### 5. Is the rating influenced by the number of votes?
+
+```{r echo=FALSE,message=FALSE,warning=FALSE,eval=FALSE}
 ggplot(movies, aes(x=votes, y=rating)) + xlab("Votes") + ylab("Rating") +
   stat_binhex() +
   scale_fill_gradient(low="lightblue", high="red", breaks=c(0, 1500, 3000, 5000),
                       limits=c(0, 5000))
+```
 
-## ---- echo=FALSE,warning=FALSE,message=FALSE-----------------------------
+### 6. Does the length of the movie change per genre?
+
+```{r, echo=FALSE,warning=FALSE,message=FALSE,eval=FALSE}
 ggplot(movies, aes(x=length)) +
   geom_density(fill="red", alpha=0.4) +
   xlim(0,300) + facet_wrap(~ Genre)
+```
 
