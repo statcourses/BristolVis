@@ -50,8 +50,11 @@ plot(bmov$Length, bmov$Rating, xlab="Length", ylab="Rating",
 ```
 
 6. If we altered the default plot parameters and generated our plot in (5) again, what will happen? can you figure out what *mar*, *tck*, *las* and *cex.axis* do?
-```{r, eval=FALSE}
+```{r}
 op = par(mar=c(3,3,2,1), tck=-.01, las=1, cex.axis=0.4)
+```
+
+```{r, eval=FALSE}
 plot(bmov$Length, bmov$Rating, xlab="Length", ylab="Rating",
      ylim = c(1,10), col = 2, main = "Movie rating against length")
 ```
