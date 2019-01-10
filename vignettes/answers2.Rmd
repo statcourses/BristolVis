@@ -49,14 +49,16 @@ plot(bmov$Length, bmov$Rating, xlab="Length", ylab="Rating",
      ylim = c(1,10), col = 2, main = "Movie rating against length")
 ```
 
-6. If we altered the default plot parameters using:
-```{r}
+6. If we altered the default plot parameters and generated our plot in (5) again, what will happen? can you figure out what *mar*, *tck*, *las* and *cex.axis* do?
+```{r, eval=FALSE}
 op = par(mar=c(3,3,2,1), tck=-.01, las=1, cex.axis=0.4)
-```
-and generated our plot in (5) again, what will happen? can you figure out what *mar*, *tck*, *las* and *cex.axis* do?
-```{r}
 plot(bmov$Length, bmov$Rating, xlab="Length", ylab="Rating",
      ylim = c(1,10), col = 2, main = "Movie rating against length")
+```
+
+```{r, echo=FALSE}
+plot(bmov$Length, bmov$Rating, xlab="Length", ylab="Rating",
+     ylim = c(1,10), col = 2, main = "Movie rating against length", tck=-.01, las=1, cex.axis=0.4)
 ```
 
 7. Reset your plot device using:
