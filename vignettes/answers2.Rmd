@@ -53,13 +53,22 @@ plot(bmov$Length, bmov$Rating, xlab="Length", ylab="Rating",
 ```{r}
 op = par(mar=c(3,3,2,1), tck=-.01, las=1, cex.axis=0.4)
 ```
-and generated our plot in (5) again, what will happen? can you figure out what *mar*, *tck*, *las* and *xec.axis* do?
+and generated our plot in (5) again, what will happen? can you figure out what *mar*, *tck*, *las* and *cex.axis* do?
+```{r}
+plot(bmov$Length, bmov$Rating, xlab="Length", ylab="Rating",
+     ylim = c(1,10), col = 2, main = "Movie rating against length")
+```
 
 7. Reset your plot device using:
 ```{r}
 par(op)
 ```
 and generate the last plot again. Do you see the reset effect?
+
+```{r}
+plot(bmov$Length, bmov$Rating, xlab="Length", ylab="Rating",
+     ylim = c(1,10), col = 2, main = "Movie rating against length")
+```
 
 ### Histograms (20 minutes)
 We will now investigate the distribution of movie years using histograms.

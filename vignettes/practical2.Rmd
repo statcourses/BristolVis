@@ -48,7 +48,8 @@ plot(bmov$Length, bmov$Rating, xlab="Length", ylab="Rating",
 ```{r}
 op = par(mar=c(3,3,2,1), tck=-.01, las=1, cex.axis=0.4)
 ```
-and generated our plot in (5) again, what will happen? can you figure out what *mar*, *tck*, *las* and *xec.axis* do?
+and generated our plot in (5) again, what will happen? can you figure out what *mar*, *tck*, *las* and *cex.axis* do?
+
 7. Reset your plot device using:
 ```{r}
 par(op)
