@@ -9,8 +9,6 @@ This page provides notes, practicals and materials of the [data visualisation co
 
 -   PDF version of course slides: [The course slides](https://raw.githubusercontent.com/statcourses/BristolVis/master/slides.pdf) on advanced graphics using [ggplot2](https://cran.r-project.org/web/packages/ggplot2/) is made available here.
 
--   PDF version of course tutorial: [The course tutorial](https://raw.githubusercontent.com/statcourses/BristolVis/master/tutorial.pdf) on advanced graphics is also provided.
-
 -   R reference card for `Introduction to R`: The [R reference card](https://raw.githubusercontent.com/statcourses/BristolVis/master/Refcard_IntroR.pdf) summarises some useful basic commands, concepts and functions.
 
 -   R studio cheat sheet for `ggplot2`: The R studio [cheat sheet](https://raw.githubusercontent.com/statcourses/BristolVis/master/ggplot2-cheatsheet.pdf) for the ggplot2 functions is included.
