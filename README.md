@@ -5,7 +5,7 @@ Introduction to data visualisation using R: Osama Mahmoud
 
 [![Build Status](https://travis-ci.org/statcourses/BristolVis.svg?branch=master)](https://travis-ci.org/statcourses/BristolVis)
 
-This page provides notes, practicals and materials of the [data visualisation course](http://www.bristol.ac.uk/medical-school/study/short-courses/Introduction-to-Data-Visualisation-and-Web-Applications-Using-R/) held at the University of Bristol, January 2019.
+This page provides practicals and materials of the [data visualisation pilot course](http://www.bristol.ac.uk/medical-school/study/short-courses/Introduction-to-Data-Visualisation-and-Web-Applications-Using-R/) held at the University of Bristol, January 2019.
 
 -   PDF version of course slides: [The course slides](https://raw.githubusercontent.com/statcourses/BristolVis/master/slides.pdf) on advanced graphics using [ggplot2](https://cran.r-project.org/web/packages/ggplot2/) is made available here.
 
