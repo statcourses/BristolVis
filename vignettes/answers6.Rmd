@@ -5,7 +5,7 @@ output: rmarkdown::html_vignette
 ---
 <!--
 %\VignetteEngine{knitr::rmarkdown}
-%\VignetteIndexEntry{Practical 1}
+%\VignetteIndexEntry{Answers 6 - Interactive documents}
 -->
 
 ## Interactive documents using R Markdown

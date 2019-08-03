@@ -5,7 +5,7 @@ output: rmarkdown::html_vignette
 ---
 <!--
 %\VignetteEngine{knitr::rmarkdown}
-%\VignetteIndexEntry{Practical - Interactive plots}
+%\VignetteIndexEntry{Answers - Interactive plots}
 -->
 
 Load the (*movies*) data set from the `BristolVis` R package. The data can be called and viewed using:

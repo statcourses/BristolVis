@@ -5,7 +5,7 @@ output: rmarkdown::html_vignette
 ---
 <!--
 %\VignetteEngine{knitr::rmarkdown}
-%\VignetteIndexEntry{Practical 1}
+%\VignetteIndexEntry{Practical 7 - Web applications}
 -->
 
 ### Create your own application (10 minutes)

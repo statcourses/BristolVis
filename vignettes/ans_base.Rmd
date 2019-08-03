@@ -5,7 +5,7 @@ output: rmarkdown::html_vignette
 ---
 <!--
 %\VignetteEngine{knitr::rmarkdown}
-%\VignetteIndexEntry{Practical 1}
+%\VignetteIndexEntry{Answers - Base graphics}
 -->
 
 We are going to investigate a brief form of the IMDB (*movies*) data set. Movies
