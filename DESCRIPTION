@@ -7,7 +7,7 @@ Description: Package for the 'Introduction to data visualisation and web-applica
 Depends: R (>= 3.0.3)
 License: GPL-2 | GPL-3
 LazyData: TRUE
-Imports: ggplot2 (>= 2.1.0), reshape2, ggplot2movies, hexbin, plotly, htmlwidgets, ggcorrplot 
+Imports: ggplot2 (>= 2.1.0), reshape2, ggthemes, ggplot2movies, hexbin, plotly, htmlwidgets, ggcorrplot 
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
 RoxygenNote: 6.1.1
