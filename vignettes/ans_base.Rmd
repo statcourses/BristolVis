@@ -1,5 +1,5 @@
 ---
-title: "Answers 2 - Base graphics"
+title: "Answers - Base graphics"
 author: "Osama Mahmoud"
 output: rmarkdown::html_vignette
 ---
@@ -63,6 +63,10 @@ plot(bmov$Length, bmov$Rating, xlab="Length", ylab="Rating",
 plot(bmov$Length, bmov$Rating, xlab="Length", ylab="Rating",
      ylim = c(1,10), col = 2, main = "Movie rating against length", tck=-.01, las=1, cex.axis=0.4)
 ```
+
+*mar*: control plot margins (bottom, left, top, right)
+*tck*: control length of the tick marks as a fraction of the smaller of the width or height of the plotting region.
+*cex.axis*: The magnification to be used for axis annotation relative to the current setting of cex.
 
 7. Reset your plot device using:
 ```{r}
@@ -130,7 +134,6 @@ boxplot(bmov$Rating ~ bmov$Romance + bmov$Action, axes=FALSE, frame.plot=TRUE, y
 axis(2, at=seq(0,10,2.5))
 
 ## X-Axis, at points x=1 : x=4, 
-## but with labels "non R" and "Romantic"
-axis(1,at=1:4, labels=c("Non R", "Romantic", "Non A", "Action"))
+## but with sensible labels
+axis(1,at=1:4, labels=c("Non-R Non-A", "Romantic", "Action", "R and A"))
 ```
-

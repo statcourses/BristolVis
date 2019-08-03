@@ -1,0 +1,146 @@
+---
+title: "Practical - Interactive plots"
+author: "Osama Mahmoud"
+output: rmarkdown::html_vignette
+---
+<!--
+%\VignetteEngine{knitr::rmarkdown}
+%\VignetteIndexEntry{Practical - Interactive plots}
+-->
+
+Load the (*movies*) data set from the `BristolVis` R package. The data can be called and viewed using:
+
+```{r}
+data(bmov, package = "BristolVis")
+head(bmov)
+```
+
+### Scatter plots (15 minutes)
+
+Let's start with some simple scatter plots using the `bmov` data:
+
+1. Plot length Vs. rating using the advanced graphics package (ggplot2):
+```{r echo=FALSE, eval=FALSE}
+require(ggplot2)
+require(plotly)
+(G = ggplot(bmov, aes(Length, Rating)) + geom_point())
+```
+
+2. Use the `cut` function to generate a categorical form of the variable `Year` with sensible cutpoints.
+```{r echo=FALSE, eval=FALSE}
+summary(bmov$Year)
+bmov$cat_timing = cut(bmov$Year, breaks = c(1930, 1990, 2000, 2005))
+```
+
+3. Plot length Vs. rating such that points are coloured using categories of your generated timing:
+```{r echo=FALSE, eval=FALSE}
+(G = ggplot(bmov, aes(Length, Rating, color = cat_timing)) + geom_point())
+```
+
+4. The default colors of the previous plot are terrible! use your own color selections to generate a better plot.
+
+```{r echo=FALSE, eval=FALSE}
+(G = G + scale_color_manual(values = c("blue", "yellow", "red")))
+```
+
+5. Generate an interactive plot of the plot in (4) using the `plotly` package and name it `Fig_scatter`
+```{r echo=FALSE, eval=FALSE}
+Fig_scatter = ggplotly(G)
+```
+
+6. Try to zoom in using your mouse by box selection to explore further detailed information
+
+
+7. Save your interactive plot as an html file.
+```{r echo=FALSE, eval=FALSE}
+htmlwidgets::saveWidget(Fig_scatter, "Fig_scatter.html")
+```
+
+### Histograms (10 minutes)
+1. Use the `ggplot2` to plot a histogram of the movie years restricted to data after 1980.
+```{r echo=FALSE, eval=FALSE}
+G = ggplot(bmov[bmov$Year>=1980,], aes(Year)) + geom_histogram()
+```
+
+2. Produce the same plot as in (1), but set the number of bins to 25.
+```{r echo=FALSE, eval=FALSE}
+G = G + geom_histogram(bins = 25)
+```
+
+3. Generate an interactive plot of the plot in (2) using the `plotly` package and name it `Fig_hist`
+```{r echo=FALSE, eval=FALSE}
+Fig_hist = ggplotly(G)
+```
+
+4. Try to zoom in using your mouse by box selection to explore further detailed information and reset the plot (double-click)
+
+
+5. Save your interactive plot as an html file.
+```{r echo=FALSE, eval=FALSE}
+htmlwidgets::saveWidget(Fig_hist, "Fig_hist.html")
+```
+
+
+### Boxplots (10 minutes)
+1. Generate a boxplot for the ratings data by generated categories of production timing using `ggplot2`.
+```{r echo=FALSE, eval=FALSE}
+G = ggplot(bmov, aes(x=cat_timing, y =Rating)) + geom_boxplot(aes(group = cat_timing))
+```
+
+
+2. Try generating a similar interactive boxplot
+```{r echo=FALSE, eval=FALSE}
+Fig_box = ggplotly(G)
+```
+
+3. save the interactive plot to an html file
+```{r echo=FALSE, eval=FALSE}
+htmlwidgets::saveWidget(Fig_box, "Fig_box.html")
+```
+
+
+### Corrlation matrix (20 minutes)
+1. Use the built-in `iris` data to compute a correlation matrix and correlation p-values for the continous (first four) variables
+```{r echo=FALSE, eval=FALSE}
+data(iris)
+head(iris)
+require(ggcorrplot)
+data_cont = iris[,1:4]
+Corr = cor(data_cont)
+corr.p = cor_pmat(data_cont)
+```
+
+2. Visualize the correlation matrix using the method = "circle"
+```{r echo=FALSE, eval=FALSE}
+(G = ggcorrplot(Corr, method = "circle"))
+```
+
+3. Show the lower triangle using hierarchical clustering and `square` method rather than circle.
+```{r echo=FALSE, eval=FALSE}
+(G = ggcorrplot(Corr, hc.order = TRUE, type = "lower"))
+```
+
+4. Use correlation significance level 0.01 to highlight the non-significant coefficient
+```{r echo=FALSE, eval=FALSE}
+(G = ggcorrplot(Corr, hc.order = TRUE, type = "lower", p.mat = corr.p, sig.level = 0.01))
+```
+
+5. Use different shape - rather than the cross - to highlight the non-significant coefficient (use help of the function `ggcorrplot` by typing: `?ggcorrplot` to find out)
+```{r echo=FALSE, eval=FALSE}
+(G = ggcorrplot(Corr, hc.order = TRUE, type = "lower", p.mat = corr.p, sig.level = 0.01, pch = 10))
+```
+
+6. Add coeficient values on the plot in (3)
+```{r echo=FALSE, eval=FALSE}
+(G1 = ggcorrplot(Corr, hc.order = TRUE, type = "lower", lab = TRUE))
+```
+
+7.Produce interactive plot of the plot in (6)
+```{r echo=FALSE, eval=FALSE}
+Fig_cor = ggplotly(G1)
+```
+
+7.save the interactive plot in as html.
+```{r echo=FALSE, eval=FALSE}
+htmlwidgets::saveWidget(Fig_cor, "Fig_cor.html")
+```

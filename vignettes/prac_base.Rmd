@@ -1,5 +1,5 @@
 ---
-title: "Practical 2 - Base graphics"
+title: "Practical - Base graphics"
 author: "Osama Mahmoud"
 output: rmarkdown::html_vignette
 ---
@@ -58,6 +58,7 @@ and generate the last plot again. Do you see the reset effect?
 
 ### Histograms (20 minutes)
 We will now investigate the distribution of movie years using histograms.
+
 1. Use the `hist` function to plot a histogram of the movie years.
 ```{r echo=FALSE, eval=FALSE}
 hist(bmov$Year)

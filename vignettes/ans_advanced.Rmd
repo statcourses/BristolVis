@@ -1,5 +1,5 @@
 ---
-title: "Answers 3 - Advanced graphics"
+title: "Answers - Advanced graphics"
 author: "Osama Mahmoud"
 output: rmarkdown::html_vignette
 ---
