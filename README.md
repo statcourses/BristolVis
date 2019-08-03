@@ -32,7 +32,7 @@ The `BristolVis` package includes a number of practical files to guide learners 
 These practicals can be displayed by:
 
 ``` r
-vignette("practical2", package = "BristolVis")
+vignette("prac_base", package = "BristolVis")
 ```
 
 The course web-tool
