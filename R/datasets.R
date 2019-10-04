@@ -24,13 +24,13 @@
 NULL
 
 #' Movie information and user ratings from IMDB.com.
-#' 
-#' The internet movie database, \url{http://imdb.com/}, is a 
-#' website devoted to collecting movie data supplied by 
-#' studios and fans. 
-#' 
-#' It claims to be the biggest movie database on the web 
-#' and is run by  amazon.  
+#'
+#' The internet movie database, \url{http://imdb.com/}, is a
+#' website devoted to collecting movie data supplied by
+#' studios and fans.
+#'
+#' It claims to be the biggest movie database on the web
+#' and is run by  amazon.
 #' @name bmov
 #' @docType data
 #' @usage data(bmov)
@@ -52,7 +52,7 @@ NULL
 NULL
 
 #' birthweight
-#' 
+#'
 #' @name birthweight
 #' @docType data
 #' @usage data(birthweight)
@@ -63,7 +63,7 @@ NULL
 NULL
 
 #' bmi
-#' 
+#'
 #' @name bmi
 #' @docType data
 #' @usage data(bmi)
@@ -73,8 +73,28 @@ NULL
 #' data(bmi)
 NULL
 
+
+#' bmi2
+#'
+#' @name bmi2
+#' @docType data
+#' @usage data(bmi2)
+#' @return A data frame with 200 rows and 6 variables.
+#' @keywords datasets
+#' \describe{
+#' \item{id}{Unique participant ID number}
+#' \item{age}{Subject's age at time of experiment}
+#' \item{bmi}{Continuous variable capturing the participants bmi}
+#' \item{sex}{'Male' or 'Female'}
+#' \item{diet}{Participants diet: 'Good', 'Moderate' or 'Poor'}
+#' \item{status}{Health status: 'Healthy' or 'Unhealthy'}
+#' }
+#' @examples
+#' data(bmi)
+NULL
+
 #' disease
-#' 
+#'
 #' @name disease
 #' @docType data
 #' @usage data(disease)
@@ -85,7 +105,7 @@ NULL
 NULL
 
 #' lbw
-#' 
+#'
 #' @name lbw
 #' @docType data
 #' @usage data(lbw)
@@ -96,7 +116,7 @@ NULL
 NULL
 
 #' us_teams
-#' 
+#'
 #' @name us_teams
 #' @docType data
 #' @usage data(us_teams)
