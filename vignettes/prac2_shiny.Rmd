@@ -8,9 +8,6 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-
-
-
 ```{r, eval = FALSE}
 ############################################
 # LOAD EXTERNAL PACKAGES, SCRIPTS AND DATA #

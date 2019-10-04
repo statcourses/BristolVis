@@ -3,7 +3,7 @@ title: "Intro to Shiny - Practical 1"
 author: "Luke A McGuinness - `r format(Sys.time(), '%d %B, %Y')`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{prac1_shiny}
+  %\VignetteIndexEntry{Intro to Shiny - Practical 1}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
