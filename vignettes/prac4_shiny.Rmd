@@ -95,7 +95,7 @@ server <- function(input, output) {
 }
 
 #############################
-# cALL TO shinyApp FUNCTION #
+# CALL TO shinyApp FUNCTION #
 #############################
 
 shinyApp(ui = ui, server = server)
