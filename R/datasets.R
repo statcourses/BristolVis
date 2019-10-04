@@ -80,7 +80,7 @@ NULL
 #' @docType data
 #' @usage data(bmi2)
 #' @return A data frame with 200 rows and 6 variables.
-#' @keywords datasets
+#' @note The dataset contains the following 6 variables:
 #' \describe{
 #' \item{id}{Unique participant ID number}
 #' \item{age}{Subject's age at time of experiment}
@@ -89,8 +89,9 @@ NULL
 #' \item{diet}{Participants diet: 'Good', 'Moderate' or 'Poor'}
 #' \item{status}{Health status: 'Healthy' or 'Unhealthy'}
 #' }
+#' @keywords datasets
 #' @examples
-#' data(bmi)
+#' data(bmi2)
 NULL
 
 #' disease

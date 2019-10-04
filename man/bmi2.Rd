@@ -13,37 +13,18 @@ A data frame with 200 rows and 6 variables.
 \description{
 bmi2
 }
-\examples{
-data(bmi)
+\note{
+The dataset contains the following 6 variables:
+\describe{
+\item{id}{Unique participant ID number}
+\item{age}{Subject's age at time of experiment}
+\item{bmi}{Continuous variable capturing the participants bmi}
+\item{sex}{'Male' or 'Female'}
+\item{diet}{Participants diet: 'Good', 'Moderate' or 'Poor'}
+\item{status}{Health status: 'Healthy' or 'Unhealthy'}
 }
-\keyword{'Female'}}
-\keyword{'Good',}
-\keyword{'Healthy'}
-\keyword{'Moderate'}
-\keyword{'Poor'}}
-\keyword{'Unhealthy'}}
-\keyword{ID}
-\keyword{\describe{}
-\keyword{\item{age}{Subject's}
-\keyword{\item{bmi}{Continuous}
-\keyword{\item{diet}{Participants}
-\keyword{\item{id}{Unique}
-\keyword{\item{sex}{'Male'}
-\keyword{\item{status}{Health}
-\keyword{age}
-\keyword{at}
-\keyword{bmi}}
-\keyword{capturing}
+}
+\examples{
+data(bmi2)
+}
 \keyword{datasets}
-\keyword{diet:}
-\keyword{experiment}}
-\keyword{number}}
-\keyword{of}
-\keyword{or}
-\keyword{participant}
-\keyword{participants}
-\keyword{status:}
-\keyword{the}
-\keyword{time}
-\keyword{variable}
-\keyword{}}
