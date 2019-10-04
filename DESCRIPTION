@@ -6,7 +6,7 @@ Authors@R: person("Osama", "Mahmoud", email = "o.mahmoud@bristol.ac.uk", role = 
 Description: Package for the 'Introduction to data visualisation and web-applications using R' course at the University of Bristol.
 Depends: R (>= 3.0.3)
 License: GPL-2 | GPL-3
-LazyData: TRUE
+LazyData: true
 Imports: ggplot2 (>= 2.1.0), reshape2, ggthemes, ggplot2movies, hexbin, plotly, htmlwidgets, ggcorrplot, shiny
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
