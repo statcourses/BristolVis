@@ -62,3 +62,8 @@ Other courses and their associated packages
 -------------------------------------------
 
 You can view the entire set of my courses from [my personal website](http://osmahmoud.com/R-courses/) or the [stat-courses website](https://statcourses.github.io/).
+
+Feedback on the courses delivered at the University of Essex
+------------------------------------------------------------
+
+If you have attended any of the R courses delivered at the University of Essex on 19 October and 2 November 2019, please kindly fill [this feedback form](https://forms.gle/n2Aexgv8suJfp7wJA).
