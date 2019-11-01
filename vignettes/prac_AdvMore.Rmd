@@ -5,7 +5,7 @@ output: rmarkdown::html_vignette
 ---
 <!--
 %\VignetteEngine{knitr::rmarkdown}
-%\VignetteIndexEntry{Practical 3}
+%\VignetteIndexEntry{Practical 4 - More on advanced graphics}
 -->
 
 ```{r setup, include=FALSE}
