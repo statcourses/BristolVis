@@ -15,12 +15,15 @@ data(bmov)
 head(bmov)
 
 vignette("prac_base", package = "BristolVis")
-vignette("prac_advanced", package = "BristolVis")
-vignette("prac_interactive", package = "BristolVis")
-vignette("practical7", package = "BristolVis")
 vignette("ans_base", package = "BristolVis")
+vignette("prac_advanced", package = "BristolVis")
 vignette("ans_advanced", package = "BristolVis")
+vignette("prac_AdvMore", package = "BristolVis")
+vignette("ans_AdvMore", package = "BristolVis")
+vignette("prac_interactive", package = "BristolVis")
 vignette("ans_interactive", package = "BristolVis")
+
+vignette("practical7", package = "BristolVis")
 vignette("answers7", package = "BristolVis")
 
 install.packages("drat")

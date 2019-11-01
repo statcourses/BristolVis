@@ -5,13 +5,29 @@ Introduction to data visualisation using R: Osama Mahmoud
 
 [![Build Status](https://travis-ci.org/statcourses/BristolVis.svg?branch=master)](https://travis-ci.org/statcourses/BristolVis)
 
-This page provides practicals and materials of the [data visualisation course](http://www.bristol.ac.uk/medical-school/study/short-courses/Introduction-to-Data-Visualisation-and-Web-Applications-Using-R/) held at the University of Bristol, January 2019.
+This page provides practicals and materials of the [data visualisation course](http://www.bristol.ac.uk/medical-school/study/short-courses/Introduction-to-Data-Visualisation-and-Web-Applications-Using-R/) held at the University of Bristol, November 2019.
 
--   PDF version of course slides: [The course slides](https://raw.githubusercontent.com/statcourses/BristolVis/master/slides.pdf) on advanced graphics using [ggplot2](https://cran.r-project.org/web/packages/ggplot2/) is made available here.
+Course Materials:
+-----------------
 
--   R reference card for `Introduction to R`: The [R reference card](https://raw.githubusercontent.com/statcourses/BristolVis/master/Refcard_IntroR.pdf) summarises some useful basic commands, concepts and functions.
-
--   R studio cheat sheet for `ggplot2`: The R studio [cheat sheet](https://raw.githubusercontent.com/statcourses/BristolVis/master/ggplot2-cheatsheet.pdf) for the ggplot2 functions is included.
+-   PDF files of course slides:
+    -   [Inroduction to R](https://raw.githubusercontent.com/statcourses/BristolVis/master/PDF_Slides/Intro_to_R.pdf).
+    -   [Base graphics](https://raw.githubusercontent.com/statcourses/BristolVis/master/PDF_Slides/03_Base_graphics.pdf)
+    -   [Advanced graphics](https://raw.githubusercontent.com/statcourses/BristolVis/master/PDF_Slides/05_Advanced_graphics.pdf)
+    -   [More on advanced graphics](https://raw.githubusercontent.com/statcourses/BristolVis/master/PDF_Slides/07_More_on_Advanced_graphics.pdf).
+-   R scripts of the course slides:
+    -   [R script for inroduction to R](https://raw.githubusercontent.com/statcourses/BristolVis/master/R_Scripts/Rscript_Intro-R.R).
+    -   [R script for base graphics](https://raw.githubusercontent.com/statcourses/BristolVis/master/R_Scripts/Rscript_base-graphics.R)
+    -   [R script for advanced graphics](https://raw.githubusercontent.com/statcourses/BristolVis/master/R_Scripts/Rscript_advanced-graphics.R)
+    -   [R script for more on advanced graphics](https://raw.githubusercontent.com/statcourses/BristolVis/master/R_Scripts/Rscript_more_on_advanced-graphics.R).
+-   Practical exercises:
+    -   [Inroduction to R](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/practical%201%20-%20IntroR.pdf).
+    -   [Base graphics](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Practical%202%20-%20Base%20graphics.pdf)
+    -   [Advanced graphics](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Practical%203%20-%20Advanced%20graphics.pdf)
+    -   [More on advanced graphics](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Practical%204%20-%20More%20on%20advanced%20graphics.pdf).
+-   Other useful materilas:
+    -   R reference card for `Introduction to R`: The [R reference card](https://raw.githubusercontent.com/statcourses/BristolVis/master/Other_Materials/Refcard_IntroR.pdf) summarises some useful basic commands, concepts and functions.
+    -   R studio cheat sheet for `ggplot2`: The R studio [cheat sheet](https://raw.githubusercontent.com/statcourses/BristolVis/master/Other_Materials/ggplot2-cheatsheet.pdf) for the ggplot2 functions is included.
 
 Installing the `BristolVis` package
 -----------------------------------
@@ -33,6 +49,8 @@ These practicals can be displayed by:
 
 ``` r
 vignette("prac_base", package = "BristolVis")
+vignette("prac_advanced", package = "BristolVis")
+vignette("prac_AdvMore", package = "BristolVis")
 ```
 
 The course web-tool
