@@ -23,7 +23,7 @@ install.packages("BristolVis")
 Course Materials:
 -----------------
 
--   **Introduction to R**: [Slides](https://raw.githubusercontent.com/statcourses/BristolVis/master/PDF_Slides/Intro_to_R.pdf) - [R script](https://raw.githubusercontent.com/statcourses/BristolVis/master/R_Scripts/Rscript_Intro-R.R) - [Exercises](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/practical%201%20-%20IntroR.pdf) - [Solutions](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Answers%201%20-%20IntroR.pdf).
+-   **Introduction to R**: [Slides](https://raw.githubusercontent.com/statcourses/BristolVis/master/PDF_Slides/01_Intro_to_R.pdf) - [R script](https://raw.githubusercontent.com/statcourses/BristolVis/master/R_Scripts/Rscript_Intro-R.zip) - [Exercises](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/practical%201%20-%20IntroR.pdf) - [Solutions](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Answers%201%20-%20IntroR.pdf).
 
 -   **Base graphics**: [Slides](https://raw.githubusercontent.com/statcourses/BristolVis/master/PDF_Slides/03_Base_graphics.pdf) - [R script](https://raw.githubusercontent.com/statcourses/BristolVis/master/R_Scripts/Rscript_base-graphics.R) - [Exercises](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Practical%202%20-%20Base%20graphics.pdf) - [Solutions](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Answers%202%20-%20Base%20graphics.pdf).
 
