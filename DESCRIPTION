@@ -2,7 +2,11 @@ Package: BristolVis
 Type: Package
 Title: Data visualisation and web applications course
 Version: 0.2.0
-Authors@R: person("Osama", "Mahmoud", email = "o.mahmoud@bristol.ac.uk", role = c("aut", "cre"))
+Authors@R:
+  c(person("Osama", "Mahmoud", email = "o.mahmoud@bristol.ac.uk", role = c("aut", "cre", "cph"),
+  comment = c(ORCID = "0000-0003-0342-6704")),
+  person("Luke", "McGuinness", email = "luke.mcguinness@bristol.ac.uk", role = c("aut")),
+  person("Chris", "Penfold", email = "chris.penfold@bristol.ac.uk", role = c("aut")))
 Description: Package for the 'Introduction to data visualisation and web-applications using R' course at the University of Bristol.
 Depends: R (>= 3.0.3)
 License: GPL-2 | GPL-3

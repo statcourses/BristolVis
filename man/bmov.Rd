@@ -11,12 +11,12 @@ data(bmov)
 A data frame with 4847 rows and 24 variables.
 }
 \description{
-The internet movie database, \url{http://imdb.com/}, is a 
-website devoted to collecting movie data supplied by 
+The internet movie database, \url{http://imdb.com/}, is a
+website devoted to collecting movie data supplied by
 studios and fans.
 }
 \details{
-It claims to be the biggest movie database on the web 
+It claims to be the biggest movie database on the web
 and is run by  amazon.
 }
 \note{

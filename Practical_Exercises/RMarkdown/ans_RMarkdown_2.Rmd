@@ -1,0 +1,28 @@
+---
+title: "Exercise 2"
+author: "Chris Penfold"
+date: "12 December 2018"
+output:
+  word_document: default
+  html_document:
+    df_print: paged
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## My New Year's resolutions
+
+1. ~~Eat less biscuits~~
+    i) 01/01/2019
+  
+2. ~~Watch less TV~~
+    i) 02/01/2019
+
+3. **Do more exercise**
+
+4. **Eat more fruit**
+
+5. **Submit 1 paper drafted in RMarkdown**

@@ -1,0 +1,88 @@
+---
+title: "Answers - Intro-R"
+author: "Osama Mahmoud"
+output: rmarkdown::html_vignette
+---
+<!--
+%\VignetteEngine{knitr::rmarkdown}
+%\VignetteIndexEntry{Answers - Intro-R}
+-->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = TRUE)
+```
+
+## Exercise 1:
+Data on heights, weights and gender were collected for 10 individuals in early-adulthood. The data were reported in the table below (heights measured in cm, weights in Kg and m refers to a male gender):
+
+```{r, eval=TRUE, echo=FALSE}
+DT = data.frame(id = 1:10,
+                ht=c(155, 152, 164, 175, 193, 203, 190, 183, 155, 169),
+                wt=c(80, 85, 72, 69, 86, 110, 106, 96, 90, 89),
+                gender=c("m", "m", "f", "m", "f", "f", "f", "m", "f", "m"))
+knitr::kable(DT)
+```
+  
+  a) Create vectors for height, weight and gender and assigned them to the names: `ht`; `wt`; `gender` respectively.
+  
+```{r}
+ht = c(155, 152, 164, 175, 193, 203, 190, 183, 155, 169)
+wt = c(80, 85, 72, 69, 86, 110, 106, 96, 90, 89)
+gender = c("m", "m", "f", "m", "f", "f", "f", "m", "f", "m")
+```
+
+  b) Using `ht` and `wt` vectors, creat a new variable for the BMI (Hint: BMI is calculated by dividing weight measured in Kg by the squared height measured in **meters**)
+
+```{r}
+# convert 'ht' into meters
+ht_meters = ht / 100
+# BMI calculations
+(BMI = wt/(ht_meters^2))
+```
+
+  c) Show the length of the `ht` vector.
+  
+```{r}
+length(ht)
+```
+
+  
+  d) Show a frequency table for the `gender` variable (Hint: search the help for the table function by typing in `?table`)
+
+```{r, message=FALSE}
+?table
+table(gender)
+```
+
+  e) Round the calculated BMI values to 2 decimel digits only.
+  
+```{r}
+(BMI = round(BMI, digits = 2))
+```
+
+  f) Create a new `data.frame` with the name `DT` that includes height, in meters, weight, in Kg, BMI, and gender.
+  
+```{r}
+(DT = data.frame(ht_meters = ht/100, wt = wt, BMI = BMI, gender = gender))
+```
+
+  g) Add a logical variable to the `DT`, with a name of `obese` whose values are `TRUE` for subjects with weights over 95 Kg.
+
+```{r}
+(DT$obese = DT$wt > 95)
+```
+
+  
+  h) Find out how many subjects with weights over 95 Kg.
+  
+```{r}
+sum(DT$wt > 95)
+# or alternatively
+sum(DT$obese)
+```
+
+  i) Extract the BMI for the 3rd and 5th individuals.
+  
+```{r}
+DT$BMI[c(3,5)]
+```

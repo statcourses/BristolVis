@@ -7,41 +7,16 @@ output: github_document
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>", fig.path = "README-")
 ```
 
-## Introduction to data visualisation using R: Osama Mahmoud
+## Introduction to Data Visualisation and Web Applications Using R
+### By: Osama Mahmoud, Luke A. McGuinness and Chris Penfold
 
 [![Build Status](https://travis-ci.org/statcourses/BristolVis.svg?branch=master)](https://travis-ci.org/statcourses/BristolVis)
 
-This page provides practicals and materials of the [data visualisation course](http://www.bristol.ac.uk/medical-school/study/short-courses/Introduction-to-Data-Visualisation-and-Web-Applications-Using-R/) held at the University of Bristol, November 2019.
-
-## Course Materials:
-
-  * PDF files of course slides:
-    - [Inroduction to R](https://raw.githubusercontent.com/statcourses/BristolVis/master/PDF_Slides/Intro_to_R.pdf).
-    - [Base graphics](https://raw.githubusercontent.com/statcourses/BristolVis/master/PDF_Slides/03_Base_graphics.pdf)
-    - [Advanced graphics](https://raw.githubusercontent.com/statcourses/BristolVis/master/PDF_Slides/05_Advanced_graphics.pdf)
-    - [More on advanced graphics](https://raw.githubusercontent.com/statcourses/BristolVis/master/PDF_Slides/07_More_on_Advanced_graphics.pdf).
-    
-  * R scripts of the course slides:
-    - [R script for inroduction to R](https://raw.githubusercontent.com/statcourses/BristolVis/master/R_Scripts/Rscript_Intro-R.R).
-    - [R script for base graphics](https://raw.githubusercontent.com/statcourses/BristolVis/master/R_Scripts/Rscript_base-graphics.R)
-    - [R script for advanced graphics](https://raw.githubusercontent.com/statcourses/BristolVis/master/R_Scripts/Rscript_advanced-graphics.R)
-    - [R script for more on advanced graphics](https://raw.githubusercontent.com/statcourses/BristolVis/master/R_Scripts/Rscript_more_on_advanced-graphics.R).
-    
-  * Practical exercises:
-    - [Inroduction to R](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/practical 1 - IntroR.pdf).
-    - [Base graphics](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Practical 2 - Base graphics.pdf)
-    - [Advanced graphics](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Practical 3 - Advanced graphics.pdf)
-    - [More on advanced graphics](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Practical 4 - More on advanced graphics.pdf).
-    
-  * Other useful materilas:
-    - R reference card for `Introduction to R`:
-The [R reference card](https://raw.githubusercontent.com/statcourses/BristolVis/master/Other_Materials/Refcard_IntroR.pdf) summarises some useful basic commands, concepts and functions.
-    - R studio cheat sheet for `ggplot2`:
-The R studio [cheat sheet](https://raw.githubusercontent.com/statcourses/BristolVis/master/Other_Materials/ggplot2-cheatsheet.pdf) for the ggplot2 functions is included.
+This page provides materials and practicals of the [data visualisation course](http://www.bristol.ac.uk/medical-school/study/short-courses/Introduction-to-Data-Visualisation-and-Web-Applications-Using-R/) held at the University of Bristol, November 2019.
 
 ## Installing the `BristolVis` package
 
-The course uses a variety of data examples, R packages and practical sheets. The easiest way of downloading and installing all dependencies is first to install the R package associated with this course, named 'BristolVis'. It can be simply installed by running the following code lines into your R session. 
+The course uses a variety of data examples, R packages and practical sheets. The easiest way of downloading and installing all dependencies is to install the R package associated with this course, named 'BristolVis'. It can be simply installed by running the following code lines into your R session.
 
 ```{r eval=FALSE}
 install.packages("drat")
@@ -49,24 +24,62 @@ drat::addRepo("statcourses")
 install.packages("BristolVis")
 ```
 
-## Usage of practicals
+## Course Materials:
 
-The `BristolVis` package includes a number of practical files to guide learners to advanced graphics using R.
+  * **Introduction to R**: [Slides](https://raw.githubusercontent.com/statcourses/BristolVis/master/PDF_Slides/Intro_to_R.pdf) - [R script](https://raw.githubusercontent.com/statcourses/BristolVis/master/R_Scripts/Rscript_Intro-R.R) - [Exercises](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/practical 1 - IntroR.pdf) - [Solutions](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Answers 1 - IntroR.pdf).
+  
+  * **Base graphics**: [Slides](https://raw.githubusercontent.com/statcourses/BristolVis/master/PDF_Slides/03_Base_graphics.pdf) - [R script](https://raw.githubusercontent.com/statcourses/BristolVis/master/R_Scripts/Rscript_base-graphics.R) - [Exercises](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Practical 2 - Base graphics.pdf) - [Solutions](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Answers 2 - Base graphics.pdf).
+ 
+  * **Advanced graphics**: [Slides](https://raw.githubusercontent.com/statcourses/BristolVis/master/PDF_Slides/05_Advanced_graphics.pdf) - [R script](https://raw.githubusercontent.com/statcourses/BristolVis/master/R_Scripts/Rscript_advanced-graphics.R) - [Exercises](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Practical 3 - Advanced graphics.pdf) - [Solutions](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Answers 3 - Advanced graphics.pdf).
+  
+  * **More on advanced graphics**: [Slides](https://raw.githubusercontent.com/statcourses/BristolVis/master/PDF_Slides/07_More_on_Advanced_graphics.pdf) - [R script](https://raw.githubusercontent.com/statcourses/BristolVis/master/R_Scripts/Rscript_more_on_advanced-graphics.R) - [Exercises](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Practical 4 - More on advanced graphics.pdf) - [Solutions](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Answers 4 - More on advanced graphics.pdf).
+  
+  * **Interactive plots**: [Slides](https://raw.githubusercontent.com/statcourses/BristolVis/master/PDF_Slides/09_Interactive_plots.pdf) - [R script](https://raw.githubusercontent.com/statcourses/BristolVis/master/R_Scripts/Rscript_interactive_plots.R) - [Exercises](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Practical 5 - Interactive plots.pdf) - [Solutions](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Answers 5 - Interactive plots.pdf).
+  
+  * **Inroduction to R Markdown**: [Slides](https://raw.githubusercontent.com/statcourses/BristolVis/master/PDF_Slides/11_Intro_RMarkdown.pdf) - [Exercises](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/RMarkdown/Practical 6 - RMarkdown.pdf) - Solutions are as follows:
+    - Exercise 1: [Rmd file](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/RMarkdown/ans_RMarkdown_1.Rmd), [html output](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/RMarkdown/ans_RMarkdown_1.html), [pdf output](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/RMarkdown/ans_RMarkdown_1.pdf), [word output](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/RMarkdown/ans_RMarkdown_1.docx).
+    - Exercise 2: [Rmd file](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/RMarkdown/ans_RMarkdown_2.Rmd), [html output](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/RMarkdown/ans_RMarkdown_2.html), [pdf output](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/RMarkdown/ans_RMarkdown_2.pdf), [word output](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/RMarkdown/ans_RMarkdown_2.docx).
+    - Exercise 3: [Rmd file](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/RMarkdown/ans_RMarkdown_3.Rmd), [html output](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/RMarkdown/ans_RMarkdown_3.html), [pdf output](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/RMarkdown/ans_RMarkdown_3.pdf), [word output](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/RMarkdown/ans_RMarkdown_3.docx).
+    - Exercise 4: [Rmd file](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/RMarkdown/ans_RMarkdown_4.Rmd), [html output](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/RMarkdown/ans_RMarkdown_4.html), [pdf output](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/RMarkdown/ans_RMarkdown_4.pdf), [word output](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/RMarkdown/ans_RMarkdown_4.docx).
+    - Exercise 5: [Rmd file](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/RMarkdown/ans_RMarkdown_5.Rmd), [html output](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/RMarkdown/ans_RMarkdown_5.html)
+  
+  * **Inroduction to Shiny**: [Slides](https://raw.githubusercontent.com/statcourses/BristolVis/master/PDF_Slides/13_Intro_shiny.pdf) - [Exercises 1](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Shiny/practical 7_1_shiny.pdf) - [Exercises 2](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Shiny/practical 7_2_shiny.pdf) - [Exercises 3](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Shiny/practical 7_3_shiny.pdf) - [Exercises 4](https://raw.githubusercontent.com/statcourses/BristolVis/master/Practical_Exercises/Shiny/practical 7_4_shiny.pdf).
+  
+    
+  * **Other useful materilas:**
+    - The [R reference card](https://raw.githubusercontent.com/statcourses/BristolVis/master/Other_Materials/Refcard_IntroR.pdf) summarises basic concepts of R.
+    - The R studio [cheat sheet for the ggplot2](https://raw.githubusercontent.com/statcourses/BristolVis/master/Other_Materials/ggplot2-cheatsheet.pdf) summarises functions of the `ggplot2` package.
+    - The R studio [cheat sheet for web applications](https://raw.githubusercontent.com/statcourses/BristolVis/master/Other_Materials/shiny-cheatsheet.pdf) summarises functions of the `shiny` package.
 
-These practicals can be displayed by:
+## Usage of practicals via `BristolVis`
+
+The practical exercises and their solutions can be displayed via the `BristolVis` package using:
 ```{r, eval=FALSE}
+vignette("prac_IntroR", package = "BristolVis")
 vignette("prac_base", package = "BristolVis")
 vignette("prac_advanced", package = "BristolVis")
 vignette("prac_AdvMore", package = "BristolVis")
+vignette("prac_interactive", package = "BristolVis")
+vignette("prac_RMarkdown", package = "BristolVis")
+vignette("prac1_shiny", package = "BristolVis")
+vignette("prac2_shiny", package = "BristolVis")
+vignette("prac3_shiny", package = "BristolVis")
+vignette("prac4_shiny", package = "BristolVis")
 ```
 
-## The course web-tool
-I have designed a web-tool, named `RVis`, to help me delivering this course. It enables exploring the training data sets, generating graphics, presenting summary results in an interactive way. You can [check it out from here](http://bristol-medical-stat.bristol.ac.uk:3838/RVis/).
+Solutions of some of these practical exercises can be displayed via the `BristolVis` package as follows:
+```{r, eval=FALSE}
+vignette("ans_IntroR", package = "BristolVis")
+vignette("ans_base", package = "BristolVis")
+vignette("ans_advanced", package = "BristolVis")
+vignette("ans_AdvMore", package = "BristolVis")
+vignette("ans_interactive", package = "BristolVis")
+```
 
+## Other resources
 
-## Other courses and their associated packages
-
-You can view the entire set of my courses from [my personal website](http://osmahmoud.com/R-courses/) or the [stat-courses website](https://statcourses.github.io/).
-
-## Feedback on the courses delivered at the University of Essex
-If you have attended any of the R courses delivered at the University of Essex on 19 October and 2 November 2019, please kindly fill [this feedback form](https://forms.gle/n2Aexgv8suJfp7wJA).
+  * You can view the entire set of courses delivered by [Osama Mahmoud](http://www.bristol.ac.uk/expsych/people/osama-mahmoud/overview.html) and their associated R packages from [his personal website](http://osmahmoud.com/R-courses/) and the [stat-courses website](https://statcourses.github.io/).
+    
+  * You can view the github page created by [Chris Penfold](http://www.bristol.ac.uk/clinical-sciences/people/christopher-penfold/overview.html) for the R Markdown materials associated with this course [from here](https://github.com/Chris-M-P/Rmarkdown).
+  
+  * A shiny application developed by [Luke McGuinness](https://research-information.bristol.ac.uk/en/persons/luke-a-mcguinness(2c0401d0-499b-444b-b477-0631416ddf48).html) can be viewed [from here](https://mcguinlu.shinyapps.io/robvis/).
